@@ -3,7 +3,7 @@
 ; Title:  control-statements-if-else.js
 ; Author: Professor Krasso
 ; Modified by: Fred Marble
-; Date:   25 June 2017
+; Date:  05 November 2020
 ; Description: Using Switches to not have logical issues with If/Else Statements.
 ;===========================================
 */
