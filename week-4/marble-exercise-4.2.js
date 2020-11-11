@@ -40,7 +40,7 @@ function getFruits(arr){
 console.log(header.display("Fred", "Marble", "Exercise 4.2"));
 
 //Places a blank space between header & exercise results.
-console.log("\n")
+console.log("\n");
 
 //Calling the getFruits Function to show the fruit in the array.
 getFruits(fruits);
