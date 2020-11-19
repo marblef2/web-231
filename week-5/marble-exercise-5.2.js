@@ -4,12 +4,12 @@
 ; Author: Professor Krasso
 ; Date:   18 November 2020
 ; Modified By: Fred Marble
-; Description: Displays a formatted header
+; Description: Displays an array of my favorite foods.
 ;===========================================
 */
 
 //Linking the header file.
-const header = require('./marble-header.js')
+const header = require('./marble-header.js');
 
 //Creating the Array with my favorite foods.
 let foods = ["Pizza", "Steak", "Mashed Potato", "Meatloaf", "Porkchops"];
