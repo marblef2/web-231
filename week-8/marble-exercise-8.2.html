@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marble Exercise 8.2</title>
+
+  <style type="text/css">
+    #nav{
+      background-color: aqua;
+      height: 40px;
+      width: 100%;
+      display: block;
+    }
+
+    ul {
+      padding-top: 20px;
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+<div id="nav"></div>
+<div id="fruits"></div>
+
+<script>
+ let fruits = [
+  {
+    id: "4011",
+    type: "Banana"
+  },
+  {
+    id: "4067",
+    type: "Kiwi"
+  },
+  {
+    id: "1104",
+    type: "Grapefruit"
+  },
+  {
+    id: "3524",
+    type: "Oranges"
+  }
+
+ ]
+ let output = "<h2>Fruits</h2><ul>";
+    for (let x = 0; x < fruits.length; x++) {
+        output += "<li>" + fruits.id +" " + fruits.type+"</li>";
+    }
+    output += "</ul>";
+
+    document.getElementById('fruits').innerHTML = output;
+</script>
+
+</body>
+</html>
