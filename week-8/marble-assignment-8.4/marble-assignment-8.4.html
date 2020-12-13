@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marble Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="./site.css">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+//Creating the Employee Constructor Function.
+function employeeConstructor(id, firstName, lastName, title){
+  this.id = id;
+
+  this.firstName = firstName;
+
+  this.lastName = lastName;
+
+  this.title = title;
+}
+// Constructing the Employees.
+let employee = [
+
+  new employeeConstructor(1, "Thomas", "Edison", "Software Engineer"),
+
+  new employeeConstructor(2, "Benjamin", "Franklin", "Programmer"),
+
+  new employeeConstructor(3, "Nikola", "Tesla", "Project Manager"),
+
+  new employeeConstructor(4, "Charles", "Babbage", "Product Manager"),
+
+  new employeeConstructor(5, "Alexander", "Bell", "Business Analyst")
+]
+// Creating the getEmployee function.
+function getEmployee(id){
+  if (id == employee.forEach.id){
+    $(alert("Employee Id: " + employee.id + " Employee Name: " + employee.firstName + " " + employee.lastName + " Employee Title: " + employee.title));
+  }
+  else{
+
+  }
+}
+$('table').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+    "<table>" +
+    "<thead>" +
+    "<tr><td>Id</td><td>First Name</td><td>Last Name</td><td>Title</td></tr>" +
+    "</thead>"+
+    "<tbody>" +
+      employee.forEach(function(index){
+        document.getElementById('table').innerHTML= "<tr><td>" + index.id +"</td><td>" + index.firstName + "</td><td>" + index.lastName +"</td><td>" + index.title+ "</td></tr>"
+      })
+    "</tbody>" +
+    "</table>"
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function () {
+      getEmployee(id);
+    })
+  });
+</script>
+</body>
+</html>
