@@ -1,0 +1,12 @@
+#nav{
+  background-color: aqua;
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+p{
+  font-weight: 300;
+}
+h2{
+  font-weight: 500;
+}

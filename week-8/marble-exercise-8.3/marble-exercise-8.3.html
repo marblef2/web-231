@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Marble Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
+
+</head>
+<body>
+<div id="nav"></div>
+<h2>Interesting Title</h2>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet commodo justo. Curabitur rhoncus, erat vitae finibus scelerisque,
+  ex lacus consectetur diam, suscipit egestas leo velit eu leo. Phasellus feugiat lectus a massa efficitur pulvinar.
+   Proin est massa, consectetur eget arcu eget, sollicitudin lobortis lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam gravida nec nisi in fringilla.
+   Mauris finibus pulvinar tellus sed interdum. Suspendisse sit amet condimentum purus. Curabitur ultrices et nisi tristique vestibulum.
+   Vestibulum euismod porttitor lectus ac rutrum. Fusce aliquet sapien non metus sodales, eu ornare turpis vulputate.
+    Vestibulum laoreet magna diam. Nulla tincidunt maximus augue, id condimentum elit. Integer rhoncus,
+  libero ut vulputate accumsan, orci ante placerat quam, in elementum turpis mauris non elit. Nam at facilisis lectus, id sollicitudin nisi.
+</p>
+<button type="button">Toggle</button>
+<br>
+<table>
+  <tr>
+      <td><a href="#" class="fruitsId">1</a></td>
+      <td>Banana</td>
+  </tr>
+  <tr>
+      <td><a href="#" class="fruitsId">2</a></td>
+      <td>Kiwi</td>
+  </tr>
+  <tr>
+      <td><a href="#" class="fruitsId">3</a></td>
+      <td>Grapefruit</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitsId">4</a></td>
+    <td>Oranges</td>
+</tr>
+<tr>
+  <td><a href="#" class="fruitsId">5</a></td>
+  <td>Watermelon</td>
+</tr>
+</table>
+<script type="text/javascript">
+  $("button").click(function(){
+  $("p").toggle();
+});
+
+let fruits = [
+  {
+    id: "1",
+    type: "Banana"
+  },
+  {
+    id: "2",
+    type: "Kiwi"
+  },
+  {
+    id: "3",
+    type: "Grapefruit"
+  },
+  {
+    id: "4",
+    type: "Oranges"
+  },
+  {
+    id: "5",
+    type: "Watermelon"
+  }
+]
+$(".fruitsId").click(function (event) {
+            event.preventDefault();
+            let fruitId = $(this).text();
+            let fruitType = $(this).closest("td").next().text();
+            alert("{fruit_id: " + fruitsId + ", fruit_type: " + fruitsType + "}");
+        });
+</script>
+
+</body>
+</html>
